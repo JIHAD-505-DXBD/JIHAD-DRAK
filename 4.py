@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python2
 #coding=utf-8
 #The Credit For This Code Goes To ILOVE JIHAD 
 #If You Wanna Take Credits For This Code, Please Look Yourself Again...
