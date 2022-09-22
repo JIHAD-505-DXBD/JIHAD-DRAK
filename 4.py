@@ -88,8 +88,7 @@ print  """
  \033[1;96m ┈┈┈┈┈┈┈┈┈┈┈┈╲┊┊┊┊╱┈┈┈┈┈┈┈┈   
  \033[1;96m ┈┈┈┈┈┈┈┈┈┈┈┈▕╲▂▂╱▏┈┈┈┈┈┈┈┈
  \033[1;96m ┈┈┈┈┈┈┈┈╱▔▔▔▔┊┊┊┊▔▔▔▔╲┈┈┈┈
-  \033[1;96m ─────────────•◈•──────────  
-   \033[1;92m███████▒▒WELCOME TO BLACK JIHAD ▒▒████████
+\033[1;96m ─────────────•◈•────────── \033[1;92m███████▒▒WELCOME TO BLACK JIHAD ▒▒████████
 \033[1;95m♡╭──────────•◈•──────────╮♡\033[1;96mBLACK JIHAD \033[1;95m♡╭──────────•◈•──────────╮♡
 \033[1;94mAuthor\033[1;91m: \033[1;91mlovehacker
 \033[1;94mBLACK JIHAD \033[1;91m: \033[1;91▒▓██████████████]99.9
@@ -125,7 +124,7 @@ while (loop == 'true'):
 
 def login():
 	os.system('clear')
-	try:
+
 		toket = open('login.txt','r')
 		menu() 
 	except (KeyError,IOError):
@@ -151,7 +150,7 @@ def login():
 		br.submit()
 		url = br.geturl()
 		if 'save-device' in url:
-			try:
+			
 				sig= 'api_key=882a8490361da98702bf97a021ddc14dcredentials_type=passwordemail='+id+'format=JSONgenerate_machine_id=1generate_session_cookies=1locale=en_USmethod=auth.loginpassword='+pwd+'return_ssl_resources=0v=1.062f8ce9f74b12f84c123cc23437a4a32'
 				data = {"api_key":"882a8490361da98702bf97a021ddc14d","credentials_type":"password","email":id,"format":"JSON", "generate_machine_id":"1","generate_session_cookies":"1","locale":"en_US","method":"auth.login","password":pwd,"return_ssl_resources":"0","v":"1.0"}
 				x=hashlib.new("md5")
